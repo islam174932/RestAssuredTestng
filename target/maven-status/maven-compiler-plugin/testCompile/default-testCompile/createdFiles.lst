@@ -1,0 +1,11 @@
+pojo\Owner.class
+sptify\auth\PlaylistCreationTest.class
+api\BaseTest.class
+pojo\Followers.class
+pojo\Error.class
+pojo\playlist.class
+pojo\Tracks.class
+api\playlistpost.class
+pojo\InnerError.class
+pojo\ExternalUrls.class
+pojo\ExternalUrls__1.class
