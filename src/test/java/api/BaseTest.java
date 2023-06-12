@@ -12,7 +12,7 @@ public class BaseTest {
 
     protected RequestSpecification requestSpecification;
     protected ResponseSpecification responseSpecification;
-    protected String accessToken = "BQCyEKQtQQEevbf6M00jm5h3uGRcbbk-UaT-qjOvEV894YyOAdFz5VfvJ87wILp2uZBcsUME6bf9uTfXD8zbEYANwuVLJyF0k3q2WpeDzsmPqmTR70tf09sq_-sfaVs8_bwADngSVh-yzdrM0LKD9_hf6OvPCCaIduWiYhcGIPcWJifFc4jVG1zpoXWIEpXhbE4Yvty-zgvoKkD9hH8qZg1MD7NAybROjuS-81cLnDkCGXOcfOUQTIle0F57jGw4Bmejww_fqZ8IA401";
+    protected String accessToken = "BQCcI6B-7nRvMdY-JXmebPepQJ8HyfZ5foeTjyM2BYZ5gshNH_3_5n7fTfkOLVsb4rSAQuFgi2krR3ZTmK3l49MthRuEsvnNrg8tSRrXqzc2gCZFSS2yB_edHCxMg44KAxVIvRRaPRn0lKeTcLYRsvsZIIMT0t8TC5QSJPYHallZiIIRDSibmuN6gk1iW_MrsolsBnOeKdgZQHCtLUKa8BWv3zeMIYynx6xaeZv1WXhC4HB5IaoUvXKWHxq9Qvnq6t5K2U25srAfCsIy";
 
     @Before
     public void setup() {

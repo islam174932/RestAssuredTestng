@@ -32,7 +32,7 @@ public class PlaylistCreationTest extends playlistpost {
     public void shouldCreatePlaylist() {
 
         playlist requesrplaylist = new playlist();
-        requesrplaylist.setName("the list after i created the pojo342");
+        requesrplaylist.setName("the list after i created the pojo342122");
         requesrplaylist.setDescription("the new list after we made the pojo class");
         requesrplaylist.set_public(false);
 
@@ -44,6 +44,26 @@ public class PlaylistCreationTest extends playlistpost {
 
     }
 
+
+    @Test
+    public void shouldFailedCreatePlaylist() {
+        String body = "{\n" +
+                "    \"name\": \"\",\n" +
+                "    \"description\": \"New playlist description\",\n" +
+                "    \"public\": false\n" +
+                "}";
+
+        Error error=   given(requestSpecification)
+
+                .body(body)
+                .when()
+                .post("users/31g2xrhbi4spoell5laygqv2mk5q/playlists")
+                .then()
+                .spec(responseSpecification)
+                .assertThat()
+                .statusCode(400).extract().as((Type) Error.class);
+        assertThat(error.getError().getStatus(),equalTo(400));
+    }
 
 
     @Test
